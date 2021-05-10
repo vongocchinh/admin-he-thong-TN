@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container-layout{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .add-icon-layout{
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+.dialog-category-add{
+    width: 500px;
+}

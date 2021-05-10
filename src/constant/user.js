@@ -1,0 +1,5 @@
+export const GET_USER_SV='GET_USER_SV';
+export const GET_USER_SV_SUCCESS='GET_USER_SV_SUCCESS';
+export const GET_USER_SV_ERROR='GET_USER_SV_ERROR';
+export const GET_USER_SV_LOADING='GET_USER_SV_LOADING';
+export const RESET='RESET';

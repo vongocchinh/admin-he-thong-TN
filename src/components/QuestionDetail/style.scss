@@ -1,0 +1,25 @@
+.detail{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .detail-paper{
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 14px;
+    }
+}
+.img-layout-question-detail{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
