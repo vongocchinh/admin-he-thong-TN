@@ -36,7 +36,7 @@ export default function Login(props) {
                   onChange={onChangePass}
                   name="password"
                   placeholder="Password"
-                  type="password"
+                  type="text"
                 />
                 <input value="Đăng Nhập" type="submit" />
               </form>

@@ -14,6 +14,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
+import ArtTrackIcon from '@material-ui/icons/ArtTrack';
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import CategoryIcon from '@material-ui/icons/Category';
@@ -137,14 +138,14 @@ const useStyles = makeStyles((theme) => ({
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h9" noWrap>
+          <Typography variant="subtitle1" noWrap>
             Home
           </Typography>
           &nbsp;
           &nbsp;
           &nbsp;
           &nbsp;
-          <Typography  variant="h9" noWrap>
+          <Typography  variant="subtitle1" noWrap>
             <p className="logout" onClick={Logout}>Logout</p>
           </Typography>
         </Toolbar>
@@ -196,6 +197,14 @@ const useStyles = makeStyles((theme) => ({
                 <PersonIcon />
               </ListItemIcon>
               <ListItemText primary={"User"} />
+            </ListItem>
+          </Link>
+          <Link className="link-category-router" to="/introducer">
+            <ListItem button>
+              <ListItemIcon>
+                <ArtTrackIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Introducer"} />
             </ListItem>
           </Link>
         </List>

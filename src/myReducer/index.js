@@ -16,6 +16,9 @@ import LoginAdminStore from './login/login';
 
 import LoginAdminMessageStore from './login/message';
 
+import IntroducerStore from './introducer/introducer';
+import IntroducerMessageStore from './introducer/message';
+
 var myReducer = combineReducers({
   CategoryStore,
   QuestionStore,
@@ -28,6 +31,8 @@ var myReducer = combineReducers({
   UserMessageStore,
   UserStore,
   LoginAdminStore,
-  LoginAdminMessageStore
+  LoginAdminMessageStore,
+  IntroducerStore,
+  IntroducerMessageStore
 });
 export default myReducer;

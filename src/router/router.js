@@ -7,6 +7,7 @@ import QuestionDetail from "../container/QuestionDetail";
 import Scores from "../container/Scores";
 import UserContainer from "../container/User";
 import Login from './../container/Login';
+import Introducer from './../container/Introducer';
 
 export default function router() {
   return (
@@ -19,6 +20,7 @@ export default function router() {
         <Route path="/question/:id" component={QuestionContainer} ></Route>
         <Route path="/scores/:id" component={Scores} ></Route>
         <Route path="/question-detail/:id" component={QuestionDetail} ></Route>
+        <Route path="/introducer" component={Introducer} ></Route>
 
 
       </Switch>
