@@ -8,6 +8,7 @@ import Scores from "../container/Scores";
 import UserContainer from "../container/User";
 import Login from './../container/Login';
 import Introducer from './../container/Introducer';
+import Course from './../container2/Course';
 
 export default function router() {
   return (
@@ -21,6 +22,7 @@ export default function router() {
         <Route path="/scores/:id" component={Scores} ></Route>
         <Route path="/question-detail/:id" component={QuestionDetail} ></Route>
         <Route path="/introducer" component={Introducer} ></Route>
+        <Route path="/course" component={Course} ></Route>
 
 
       </Switch>

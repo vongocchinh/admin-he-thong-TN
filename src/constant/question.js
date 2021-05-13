@@ -31,3 +31,38 @@ export const GET_QUESTION_DETAIL_ERROR='GET_QUESTION_DETAIL_ERROR';
 
 
 export const RESET="RESET";
+
+
+
+export const GET_COURSE_LOADING='GET_COURSE_LOADING';
+
+export const GET_COURSE_SUCCESS='GET_COURSE_SUCCESS';
+
+export const GET_COURSE='GET_COURSE';
+
+
+export const DELETE_COURSE_LOADING='DELETE_COURSE_LOADING';
+
+export const DELETE_COURSE_SUCCESS='DELETE_COURSE_SUCCESS';
+
+export const DELETE_COURSE='DELETE_COURSE';
+
+
+export const ADD_COURSE_LOADING='ADD_COURSE_LOADING';
+
+export const ADD_COURSE_SUCCESS='ADD_COURSE_SUCCESS';
+
+export const ADD_COURSE='ADD_COURSE';
+
+
+export const EDIT_COURSE_LOADING='EDIT_COURSE_LOADING';
+
+export const EDIT_COURSE_SUCCESS='EDIT_COURSE_SUCCESS';
+export const EDIT_COURSE_ERROR='EDIT_COURSE_ERROR';
+
+export const EDIT_COURSE='EDIT_COURSE';
+
+
+export const edit_success='edit_success';
+
+export const reset='reset'

@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
+import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber';
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -197,6 +198,14 @@ const useStyles = makeStyles((theme) => ({
                 <PersonIcon />
               </ListItemIcon>
               <ListItemText primary={"User"} />
+            </ListItem>
+          </Link>
+          <Link className="link-category-router" to="/course">
+            <ListItem button>
+              <ListItemIcon>
+                <ConfirmationNumberIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Course"} />
             </ListItem>
           </Link>
           <Link className="link-category-router" to="/introducer">
