@@ -8,7 +8,7 @@ import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';export default 
   }
   return (
     <>
-      <Grid>
+      <Grid class="item-introduce-layout">
        
         <div className="layout-home-product">
           <div className="layout-home-product-item">

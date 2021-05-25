@@ -36,7 +36,7 @@ export default function Item(props) {
           {value.data.online?"Online":"Offline"}
         </StyledTableCell>
         <StyledTableCell width={200} align="right">
-          {value.data.quyen===2?"Mọi Người":"DON'T"}
+          {value.data.quyen===2?"Mọi Người":"Sinh Viên"}
         </StyledTableCell>
       </StyledTableRow>
     </>

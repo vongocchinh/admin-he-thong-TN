@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 export default function Item(props) {
   return (
     <>
-    <Grid >
+    <Grid class="item-introduce-layout">
       <div className="layout-home-product">
         <div className="layout-home-product-item">
           <p className="p">{props.value.data.name}</p>

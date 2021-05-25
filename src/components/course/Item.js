@@ -14,6 +14,9 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import { useEffect } from "react";
+import parser from 'html-react-parser'
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 export default function Item(props) {
   var { value } = props;
   const onDelete = () => {
@@ -66,8 +69,9 @@ export default function Item(props) {
   const onChangeName2 = (e) => {
     setName2(e.target.value);
   };
-  const onChangeDes = (e) => {
-    setDes(e.target.value);
+  const onChangeDes = (e, editor) => {
+    var data = editor.getData();
+    setDes(data);
   };
   const onChangeRoom = (e) => {
     setORoom(e.target.value);
@@ -155,7 +159,7 @@ export default function Item(props) {
             onChange={onChangeRoom}
             defaultValue={Room}
           />
-          <TextField
+          {/* <TextField
             autoFocus
             margin="dense"
             id="date"
@@ -165,6 +169,12 @@ export default function Item(props) {
             width="300px"
             onChange={onChangeDes}
             defaultValue={Des}
+          /> */}
+          <CKEditor
+            data={Des}
+            editor={ClassicEditor}
+            onChange={onChangeDes}
+            onReady={(editor) => {}}
           />
         </DialogContent>
         <DialogActions>
@@ -176,7 +186,7 @@ export default function Item(props) {
           </Button>
         </DialogActions>
       </Dialog>
-      <Grid key={value} item>
+      <Grid className="item-course-layout-course" key={value} item>
         <Paper className="item-course-layout">
           <div className="item-course-layout-button">
             <Fab size="small" color="primary" onClick={onOpen} aria-label="add">
@@ -198,7 +208,7 @@ export default function Item(props) {
           <p className="name-header-course-2">
             <span>Giới thiệu khóa học:</span>
             <br />
-            {value.data.des}.
+            {parser(value.data.des)}.
           </p>
           <p className="name-header-course-4">
             <span>Người Đứng Lớp:</span> {value.data.name1}

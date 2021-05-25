@@ -5,7 +5,6 @@ export const GET_USER_SV = () => {
   return (dispatch, getState, { getFirebase }) => {
     dispatch(GET_USER_SV_LOADING());
     db.collection("user")
-      .where("categoryId", "==", "null")
       .get()
       .then((res) => {
         var data = [];

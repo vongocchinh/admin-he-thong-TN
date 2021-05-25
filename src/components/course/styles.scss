@@ -10,7 +10,11 @@
     min-width: 300px;
     min-height: 300px;
     padding: 20px;
-    
+    max-width: 100%;
+}
+.item-course-layout-course{
+    width: 100%;
+    height: auto;
 }
 .name-header-course-1 {
     width: 100%;

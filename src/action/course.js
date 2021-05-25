@@ -1,6 +1,5 @@
 import * as course from "./../constant/question";
 import { db } from "./../config/fbConfig";
-import { MergeTypeSharp } from "@material-ui/icons";
 export const GET_COURSE = () => {
   return (dispatch, getState, { getFirebase }) => {
     dispatch(GET_COURSE_LOADING());
